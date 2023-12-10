@@ -1,0 +1,30 @@
+.profilePage {
+    background-image: url("/src/icons/Background.png");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.profileContacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    width: 400px;
+    padding: 0; 
+    margin: 100px auto;
+}
+
+.profilePhone {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #228BE6;
+}
+
+.profileMail {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+}

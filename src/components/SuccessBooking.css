@@ -1,0 +1,62 @@
+.wrap {
+    position: relative;
+    margin-top: 100px;
+}
+
+.check-sign {
+    position: absolute;
+    background: #67b2ce;
+}
+
+#check-part-1 {
+  width: 0;
+  opacity: 0;
+    height: 20px;    
+    transform:rotate(45deg);	
+    transform-origin: 0 10px;
+    left: 21px;
+    top: -20px;
+  
+  
+}
+
+#check-part-2 {
+  width: 0;
+    height: 20px;    
+    transform: rotate(-45deg);
+    left: 55px;
+  opacity: 0;
+    top: 2px;
+    transform-origin: 0 10px;
+}
+
+input {
+  display: none;
+}
+
+
+input:checked + .wrap #check-part-2 {
+  opacity: 1;
+  width: 100px;
+  transition: width .4s .3s , opacity .3s .2s;
+}
+
+input:checked + .wrap #check-part-1 {
+  opacity: 1;
+  width: 50px;
+  transition: width .3s, opacity .3s;
+}
+
+label {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #e3e3e3;
+  display: block;
+  cursor: pointer;
+  transition: background .4s;
+}
+
+
+label:hover {
+background: #e3e3e3;
+}

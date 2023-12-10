@@ -1,0 +1,34 @@
+.parking {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 70px 70px;
+    width: fit-content;
+}
+
+.parkingPlace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #a4a4a4;
+    margin: -1px -1px;
+    color: #a4a4a4;
+    font-weight: bold;
+}
+
+.up {
+    border-top: none;
+}
+
+.down {
+    border-bottom: none;
+}
+
+.freePlace {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.freePlace:hover {
+    background-color: #00b3ff78;
+    color: #686868;
+}

@@ -1,0 +1,20 @@
+.profileButton {
+    padding: 0;
+    border: 1px solid #228BE6;
+    z-index: 1000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s ease;
+}
+
+.profileButton > img {
+    width: 100%;
+    height: 100%;
+}
+
+.profileButton:hover {
+    background-color: #ffffff9e;
+}
